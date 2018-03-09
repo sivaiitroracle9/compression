@@ -4,7 +4,7 @@ import java.io.File;
 
 public class Validator {
 
-	public static void compressionValidation(String source, String destination,
+	public static void compression(String source, String destination,
 			int size) throws IllegalAccessException {
 
 		if (source == null) {
@@ -42,7 +42,7 @@ public class Validator {
 		// TODO
 	}
 
-	public static void decompressionValidation() throws IllegalAccessException {
+	public static void decompression() throws IllegalAccessException {
 		// TODO
 	}
 }

@@ -3,7 +3,11 @@ package org.agoda.archive;
 public class Agoda {
 
 	public static void main(String[] args) {
-		if (args.length < 3 || args.length > 4) {
+		AComp comp = CompressorFactory
+				.getCompressor(CompressionAlgorithm.JAVAZIP);
+		// comp.compress("C:\\Users\\edupuganti_s-pc\\Desktop\\test-dir", "C:\\Users\\edupuganti_s-pc\\Desktop\\zip-test", 1048576);
+		comp.decompress("C:\\Users\\edupuganti_s-pc\\Desktop\\zip-test\\test-dir.zip", "C:\\Users\\edupuganti_s-pc\\Desktop\\out-test-dir");
+/*		if (args.length < 3 || args.length > 4) {
 			help();
 		}
 
@@ -21,7 +25,7 @@ public class Agoda {
 		} else {
 			System.out.println("ERROR :: Invalid command ...........");
 			help();
-		}
+		}*/
 	}
 
 	private static void help() {

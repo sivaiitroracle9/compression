@@ -44,7 +44,7 @@ public abstract class AbstractAComp implements AComp {
 	private void listFiles(List<File> source, File file) {
 		File[] files = file.listFiles();
 		for (File f : files) {
-			if (file.isFile())
+			if (f.isFile())
 				source.add(f);
 			else
 				listFiles(source, f);
